@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahpara Siddique || Portfolio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header">
+        <nav class="navbar container">
+            <a href="#hero" class="logo">Mahpara Siddique</span></a>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education & Experience</a></li>
+                <li><a href="#certifications">Awards & Certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section id="hero" class="hero">
+            <div class="particles"></div>
+            <div class="hero-content container" data-aos="fade-up">
+                
+                <h1>Hi, I'm <span class="gradient-text">Mahpara Siddique</span></h1>
+                <p class="tagline">Computational Biologist & Healthcare AI Researcher</p>
+                <h2 class="typing-container">I build AI for <span class="typing-text"></span><span class="cursor">|</span></h2>
+                <p class="subtitle">Bridging Life Sciences and Deep Learning to Accelerate Drug Discovery & Targeted Therapeutics.</p>
+                
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">View Research Projects</a>
+                    <a href="Mahpara_Siddique_CV.pdf" download="Mahpara_Siddique_CV.pdf" class="btn btn-secondary">Download CV</a>
+                </div>
+                
+                <div class="social-links">
+                    <a href="https://github.com/mahpara-siddique" target="_blank" aria-label="GitHub"><ion-icon name="logo-github"></ion-icon></a>
+                   <a href="https://www.linkedin.com/in/mahpara-siddique-77068b1bb" target="_blank" aria-label="LinkedIn"><ion-icon name="logo-linkedin"></ion-icon></a>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mahparasiddique0310@gmail.com" target="_blank" aria-label="Email"><ion-icon name="mail-outline"></ion-icon></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="about section">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-right">About <span class="gradient-text">Me</span></h2>
+                <div class="about-grid">
+                    <!-- LEFT SIDE: PROFILE IMAGE -->
+                    <div class="about-image-card glass-card" data-aos="fade-right">
+                        <img src="profile.jpeg" alt="Mahpara Siddique" class="about-profile-img">
+                    </div>
+
+                    <!-- RIGHT SIDE: WRITTEN BIO -->
+                    <div class="about-text glass-card" data-aos="fade-left">
+                        <p>Driven by a mission to bridge biological sciences and artificial intelligence, I specialize in leveraging geometric deep learning, protein language models, and computational biology to solve complex challenges in healthcare and targeted drug discovery.</p>
+                        <p>With a strong foundation in life sciences (BS Zoology, 3.96/4.00 CGPA) and hands-on expertise in PyTorch and deep learning architectures, I help translate intricate biological mechanisms into scalable, high-accuracy AI models — from predicting targeted protein degradation to discovering novel antimicrobial peptides.</p>
+                        
+                        <div class="research-interests">
+                            <span class="pill">Healthcare AI</span>
+                            <span class="pill">3D Geometric Deep Learning</span>
+                            <span class="pill">Targeted Protein Degradation</span>
+                            <span class="pill">Antimicrobial Peptide Discovery</span>
+                            <span class="pill">Protein Language Models</span>
+                            <span class="pill">Structural Bioinformatics</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+                <!-- RESEARCH PROJECTS SECTION -->
+        <section id="projects" class="projects section">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-right">Research <span class="gradient-text">Projects</span></h2>
+                
+                <div class="projects-grid">
+                    <!-- Project 1: MS-LANet v2 -->
+                    <div class="project-card glass-card" data-aos="fade-up">
+                        <div class="project-icon">🧬</div>
+                        <h3>MS-LANet v2: Multi-Head Self-Attention & Ensemble</h3>
+                        <p class="project-desc">Designed MS-LANet v2 to solve localized sorting signal dilution in 10-class protein subcellular localization by coupling a learnable-query Multi-Head Self-Attention pooling probe with frozen ESM-2 (650M) embeddings and consensus SVM ensembling.</p>
+                        <div class="project-metrics">
+                            <span class="metric">Acc: 84.47%</span>
+                            <span class="metric">MCC: 0.8142</span>
+                            <span class="metric highlight">+2.67% over ESM-2 15B</span>
+                        </div>
+                        <div class="tech-tags">
+                            <span class="pill outline">PyTorch</span>
+                            <span class="pill outline">ESM-2 (650M)</span>
+                            <span class="pill outline">Self-Attn Pooling</span>
+                            <span class="pill outline">SVM Consensus</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/mahpara-siddique/ms-lanet" target="_blank" class="btn btn-sm btn-outline"><ion-icon name="logo-github"></ion-icon> GitHub</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: AMP-MHSA -->
+                    <div class="project-card glass-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="project-icon">🧫</div>
+                        <h3>AMP-MHSA: Bio-Informed Attention for AMP Discovery</h3>
+                        <p class="project-desc">Engineered AMP-MHSA to overcome helical periodicity loss in antimicrobial peptide identification (AMP Scanner v2, N=2,848) using 3.6-residue Helical Positional Encodings, Eisenberg Hydrophobic Moment, and a ~449-param Bio-Attention Bias.</p>
+                        <div class="project-metrics">
+                            <span class="metric">Acc: 93.68%</span>
+                            <span class="metric">MCC: 0.8745</span>
+                            <span class="metric highlight">AUROC: 0.9813</span>
+                        </div>
+                        <div class="tech-tags">
+                            <span class="pill outline">Transformers</span>
+                            <span class="pill outline">ESM-2 (650M)</span>
+                            <span class="pill outline">Helical PE (3.6)</span>
+                            <span class="pill outline">Bio-Attention Bias</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/mahpara-siddique/amp-mhsa-prediction" target="_blank" class="btn btn-sm btn-outline"><ion-icon name="logo-github"></ion-icon> GitHub</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: PROTAC-Degrade3D -->
+                    <div class="project-card glass-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="project-icon">⚗️</div>
+                        <h3>PROTAC-Degrade3D: 3D-EGNN & Ubiquitination Engine</h3>
+                        <p class="project-desc">Developed PROTAC-Degrade3D to predict ternary complex degradation efficacy (PROTAC-DB, N=2,832) by coupling Satorras 3D-Equivariant GNNs with a novel Ubiquitination Geometry Module (UGM) for Lysine accessibility mapping.</p>
+                        <div class="project-metrics">
+                            <span class="metric">Acc: 97.46%</span>
+                            <span class="metric">MCC: 0.9444</span>
+                            <span class="metric highlight">AUROC: 0.9934</span>
+                        </div>
+                        <div class="tech-tags">
+                            <span class="pill outline">3D-EGNN</span>
+                            <span class="pill outline">UGM</span>
+                            <span class="pill outline">ESM-2</span>
+                            <span class="pill outline">RDKit</span>
+                            <span class="pill outline">3Dmol.js</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/mahpara-siddique/protac-degrade3d" target="_blank" class="btn btn-sm btn-outline"><ion-icon name="logo-github"></ion-icon> GitHub</a>
+                            <a href="https://mahpara-siddique.github.io/protac-degrade3d/" target="_blank" class="btn btn-sm btn-primary"><ion-icon name="open-outline"></ion-icon> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS SECTION -->
+        <section id="skills" class="skills section">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-right">Technical <span class="gradient-text">Skills</span></h2>
+                <div class="skills-grid">
+                    <div class="skill-category glass-card" data-aos="fade-up">
+                        <h3><ion-icon name="code-slash-outline"></ion-icon> Programming & ML Frameworks</h3>
+                        <div class="skill-tags">
+                            <span class="pill">Python</span> <span class="pill">PyTorch</span> <span class="pill">TensorFlow</span> <span class="pill">Scikit-Learn</span> <span class="pill">RDKit</span> <span class="pill">Biopython</span> <span class="pill">NumPy</span> <span class="pill">Pandas</span>
+                        </div>
+                    </div>
+                    <div class="skill-category glass-card" data-aos="fade-up" data-aos-delay="100">
+                        <h3><ion-icon name="git-network-outline"></ion-icon> AI Architectures</h3>
+                        <div class="skill-tags">
+                            <span class="pill">3D-EGNN</span> <span class="pill">Transformers (MHSA)</span> <span class="pill">ESM-2 650M</span> <span class="pill">Multi-Scale CNNs</span> <span class="pill">SVM</span> <span class="pill">Random Forest</span>
+                        </div>
+                    </div>
+                    <div class="skill-category glass-card" data-aos="fade-up" data-aos-delay="200">
+                        <h3><ion-icon name="hardware-chip-outline"></ion-icon> Bioinformatics Tools</h3>
+                        <div class="skill-tags">
+                            <span class="pill">PROTAC-DB</span> <span class="pill">PDB</span> <span class="pill">UniProt</span> <span class="pill">RDKit 3D</span> <span class="pill">3Dmol.js</span> <span class="pill">BLAST</span>
+                        </div>
+                    </div>
+                    <div class="skill-category glass-card" data-aos="fade-up" data-aos-delay="300">
+                        <h3><ion-icon name="flask-outline"></ion-icon> Domain Expertise</h3>
+                        <div class="skill-tags">
+                            <span class="pill">Targeted Protein Degradation</span> <span class="pill">Antimicrobial Peptides</span> <span class="pill">Protein Localization</span> <span class="pill">Healthcare AI</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EDUCATION & EXPERIENCE SECTION -->
+        <section id="education" class="timeline-section section">
+            <div class="container">
+                <div class="timeline-split">
+                    <!-- Education -->
+                    <div class="timeline-column">
+                        <h2 class="section-title" data-aos="fade-right"><span class="gradient-text">Education</span></h2>
+                        <div class="timeline">
+                            <div class="timeline-item glass-card" data-aos="fade-up">
+                                <div class="timeline-dot"></div>
+                                <h3 class="timeline-title">BS in Zoology</h3>
+                                <p class="timeline-subtitle">Bahauddin Zakariya University, Multan, Pakistan</p>
+                                <p class="timeline-date"><ion-icon name="calendar-outline"></ion-icon> 10/2019 – 12/2023</p>
+                                <p class="timeline-desc"><strong>CGPA:</strong> 3.96 / 4.00<br>
+                                <strong>Major Coursework:</strong> Bioinformatics, Human Genetics, Cell & Molecular Biology, General Biochemistry, Biostatistics</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Experience -->
+                    <div id="experience" class="timeline-column">
+                        <h2 class="section-title" data-aos="fade-right"><span class="gradient-text">Experience</span></h2>
+                        <div class="timeline">
+                            <div class="timeline-item glass-card" data-aos="fade-up">
+                                <div class="timeline-dot"></div>
+                                <h3 class="timeline-title">Teaching Assistant</h3>
+                                <p class="timeline-subtitle">AI Academy | Bahawalpur, Pakistan (Remote)</p>
+                                <p class="timeline-date"><ion-icon name="calendar-outline"></ion-icon> 11/2024 – 12/2024</p>
+                                <p class="timeline-desc">Taught fundamental Python programming, designed coding exercises and interactive quizzes.</p>
+                            </div>
+                            
+                            <div class="timeline-item glass-card" data-aos="fade-up">
+                                <div class="timeline-dot"></div>
+                                <h3 class="timeline-title">Mentor & Hackathon Judge</h3>
+                                <p class="timeline-subtitle">Pak Angels' Generative AI Training (Remote)</p>
+                                <p class="timeline-date"><ion-icon name="calendar-outline"></ion-icon> 12/2025</p>
+                                <p class="timeline-desc">Taught Python, mentored participants during hackathon, served as official judge.</p>
+                            </div>
+                            
+                            <div class="timeline-item glass-card" data-aos="fade-up">
+                                <div class="timeline-dot"></div>
+                                <h3 class="timeline-title">Session Moderator</h3>
+                                <p class="timeline-subtitle">iCodeGuru (Remote)</p>
+                                <p class="timeline-date"><ion-icon name="calendar-outline"></ion-icon> 2024</p>
+                                <p class="timeline-desc">Moderated live technical sessions, managed Q&A.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+                      <!-- AWARDS & CERTIFICATIONS -->
+        <section id="awards" class="awards-certs section">
+            <div class="container">
+                <div class="awards-certs-split">
+                    <!-- Awards -->
+                    <div class="column">
+                        <h2 class="section-title" data-aos="fade-right">Awards <span class="gradient-text"></span></h2>
+                        <div class="awards-grid">
+                            <!-- 1. LabLab & MindsDB -->
+                            <a href="https://lablab.ai/u/@mahpara/ai-hackathons/ai-agents-hack-with-lablab-and-mindsdb/certificate?_gl=1*181qi1f*_up*MQ..*_ga*MTI0OTQ0Mjk4NC4xNzg1NDE4MjY4*_ga_0DKXC1L0Y7*czE3ODU0MTgyNjckbzEkZzAkdDE3ODU0MTgyNjckajYwJGwwJGg3NDUyNzUwMzg." target="_blank" class="award-card glass-card clickable" data-aos="fade-up">
+                                <img src="images/lablab.png" alt="AI Agents Hack with LabLab" class="cert-thumb">
+                                <div class="card-info">
+                                    <h4>Outstanding Performance Award</h4>
+                                    <p>AI Agents Hack with LabLab and MindsDB (9/2024)</p>
+                                </div>
+                                <ion-icon name="open-outline" class="verify-icon"></ion-icon>
+                            </a>
+
+                            <!-- 2. Llama Impact Hackathon -->
+                            <a href="https://lablab.ai/u/@mahpara/ai-hackathons/llama-impact-hackathon/certificate?_gl=1*daz3fg*_up*MQ..*_ga*MTI0OTQ0Mjk4NC4xNzg1NDE4MjY4*_ga_0DKXC1L0Y7*czE3ODU0MTgyNjckbzEkZzAkdDE3ODU0MTgyNjckajYwJGwwJGg3NDUyNzUwMzg." target="_blank" class="award-card glass-card clickable" data-aos="fade-up" data-aos-delay="50">
+                                <img src="images/llama.png" alt="Llama Impact Hackathon" class="cert-thumb">
+                                <div class="card-info">
+                                    <h4>Outstanding Performance Award</h4>
+                                    <p>Llama Impact Hackathon (12/2024)</p>
+                                </div>
+                                <ion-icon name="open-outline" class="verify-icon"></ion-icon>
+                            </a>
+
+                            <!-- 3. Reasoning with o1 -->
+                            <a href="https://lablab.ai/u/@mahpara/ai-hackathons/strawberry-reasoning-with-o1/certificate?_gl=1*16yh657*_up*MQ..*_ga*MTI0OTQ0Mjk4NC4xNzg1NDE4MjY4*_ga_0DKXC1L0Y7*czE3ODU0MTgyNjckbzEkZzAkdDE3ODU0MTgyNjckajYwJGwwJGg3NDUyNzUwMzg." target="_blank" class="award-card glass-card clickable" data-aos="fade-up" data-aos-delay="100">
+                                <img src="images/o1.png" alt="Reasoning with o1" class="cert-thumb">
+                                <div class="card-info">
+                                    <h4>Outstanding Performance Award</h4>
+                                    <p>Reasoning with o1 (12/2024)</p>
+                                </div>
+                                <ion-icon name="open-outline" class="verify-icon"></ion-icon>
+                            </a>
+
+                            <!-- 4. UC Berkeley-Calico -->
+                            <a href="https://drive.google.com/file/d/11beTEXV9j4QHHUxk3GWhHRMfzZCnO7wJ/view" target="_blank" class="award-card glass-card clickable" data-aos="fade-up" data-aos-delay="150">
+                                <img src="images/berkeley.jpeg" alt="UC Berkeley Calico" class="cert-thumb">
+                                <div class="card-info">
+                                    <h4>Outstanding Performance Award</h4>
+                                    <p>UC Berkeley-Calico Coding Competition (2024)</p>
+                                </div>
+                                <ion-icon name="open-outline" class="verify-icon"></ion-icon>
+                            </a>
+
+                            <!-- 5. Nobel Service Award (Pak Angels) -->
+                            <a href="https://quiz.ideagist.com/ideagist-certificate/?cert_hash=862f6324ea7cf48c" target="_blank" class="award-card glass-card clickable" data-aos="fade-up" data-aos-delay="200">
+                                <img src="images/pak_angels.jpg" alt="Pak Angels GenAI" class="cert-thumb">
+                                <div class="card-info">
+                                    <h4>Nobel Service Recognition Award</h4>
+                                    <p>Pak Angels' GenAI Training (8/2025, 12/2025)</p>
+                                </div>
+                                <ion-icon name="open-outline" class="verify-icon"></ion-icon>
+                            </a>
+
+                            <!-- 6. Harvard CS50 Puzzle Day -->
+                            <a href="https://certificates.cs50.io/f052a87b-6b7f-4cbf-871e-f2e09ce1f3e4.pdf?size=letter" target="_blank" class="award-card glass-card clickable" data-aos="fade-up" data-aos-delay="250">
+                                <img src="images/harvard_cs50.png" alt="Harvard CS50 Puzzle Day" class="cert-thumb">
+                                <div class="card-info">
+                                    <h4>Winner</h4>
+                                    <p>Harvard University CS50 Puzzle Day Competition (2026)</p>
+                                </div>
+                                <ion-icon name="open-outline" class="verify-icon"></ion-icon>
+                            </a>
+
+                            <!-- 7. AI Factory Native Builder -->
+                            <a href="https://lablab.ai/u/@mahpara/ai-hackathons/nativebuilder-build-without-limits/certificate?_gl=1*t2wxxb*_up*MQ..*_ga*MTUyNjcwNTk2MC4xNzg2NjU1MDk5*_ga_0DKXC1L0Y7*czE3ODY2NTUwOTgkbzEkZzAkdDE3ODY2NTUwOTgkajYwJGwwJGgxMjU0MDM0ODY1" target="_blank" class="award-card glass-card clickable" data-aos="fade-up" data-aos-delay="300">
+                                <img src="images/ai_factory.png" alt="AI Factory Native Builder" class="cert-thumb">
+                                <div class="card-info">
+                                    <h4>Outstanding Performance Award</h4>
+                                    <p>AI Factory Native Builder Hackathon (08/2026)</p>
+                                </div>
+                                <ion-icon name="open-outline" class="verify-icon"></ion-icon>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Certifications -->
+                    <div id="certifications" class="column">
+                        <h2 class="section-title" data-aos="fade-right"><span class="gradient-text">Certifications</span></h2>
+                        <div class="cert-list">
+                            <!-- 1. Johns Hopkins Genomics -->
+                            <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/A02KNPZSX8K4" target="_blank" class="cert-item glass-card clickable" data-aos="fade-left">
+                                <img src="images/jhu_genomics.png" alt="Johns Hopkins University" class="cert-thumb">
+                                <div class="card-info">
+                                    <h4>Genomic Data Science Specialization</h4>
+                                    <p>Johns Hopkins University (Coursera) | 05/2026</p>
+                                </div>
+                                <ion-icon name="open-outline" class="verify-icon"></ion-icon>
+                            </a>
+
+                            <!-- 2. UC San Diego Drug Development -->
+                            <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/YNZ0M20RIWP4" target="_blank" class="cert-item glass-card clickable" data-aos="fade-left" data-aos-delay="50">
+                                <img src="images/ucsd_drug_dev.png" alt="UC San Diego Drug Development" class="cert-thumb">
+                                <div class="card-info">
+                                    <h4>Drug Development Product Management</h4>
+                                    <p>UC San Diego (Coursera) | 10/2025</p>
+                                </div>
+                                <ion-icon name="open-outline" class="verify-icon"></ion-icon>
+                            </a>
+
+                            <!-- 3. Deeplearning.ai Machine Learning -->
+                            <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/NYDA60JE425B" target="_blank" class="cert-item glass-card clickable" data-aos="fade-left" data-aos-delay="100">
+                                <img src="images/deeplearning_ml.png" alt="Deeplearning.ai" class="cert-thumb">
+                                <div class="card-info">
+                                    <h4>Machine Learning Specialization</h4>
+                                    <p>Deeplearning.ai (Coursera) | 07/2026</p>
+                                </div>
+                                <ion-icon name="open-outline" class="verify-icon"></ion-icon>
+                            </a>
+
+                            <!-- 4. UC San Diego Biology Meets Programming -->
+                            <a href="https://www.coursera.org/account/accomplishments/certificate/BYTD6GGAFWWP" target="_blank" class="cert-item glass-card clickable" data-aos="fade-left" data-aos-delay="150">
+                                <img src="images/ucsd_bio.png" alt="UC San Diego Biology" class="cert-thumb">
+                                <div class="card-info">
+                                    <h4>Biology Meets Programming</h4>
+                                    <p>UC San Diego (Coursera) | 11/2025</p>
+                                </div>
+                                <ion-icon name="open-outline" class="verify-icon"></ion-icon>
+                            </a>
+
+                            <!-- 5. IBM Generative AI -->
+                            <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/B8WLL3AJRWZ2" target="_blank" class="cert-item glass-card clickable" data-aos="fade-left" data-aos-delay="200">
+                                <img src="images/ibm_genai.png" alt="IBM Generative AI" class="cert-thumb">
+                                <div class="card-info">
+                                    <h4>Generative AI Fundamentals Specialization</h4>
+                                    <p>IBM (Coursera) | 02/2025</p>
+                                </div>
+                                <ion-icon name="open-outline" class="verify-icon"></ion-icon>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="contact section">
+            <div class="container text-center">
+                <h2 class="section-title center" data-aos="fade-up">Get In <span class="gradient-text">Touch</span></h2>
+                <p class="contact-subtitle" data-aos="fade-up" data-aos-delay="100">Actively seeking MS/PhD/Research positions in Healthcare AI & Computational Biology</p>
+                
+                <div class="contact-cards" data-aos="fade-up" data-aos-delay="200">
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mahparasiddique0310@gmail.com" target="_blank" class="contact-card glass-card">
+                        <ion-icon name="mail"></ion-icon>
+                        <h4>Email</h4>
+                        <p>mahparasiddique0310@gmail.com</p>
+                    </a>
+                    <div class="contact-card glass-card">
+                        <ion-icon name="call"></ion-icon>
+                        <h4>Phone</h4>
+                        <p>+92-304-5736405</p>
+                    </div>
+                    <div class="contact-card glass-card">
+                        <ion-icon name="location"></ion-icon>
+                        <h4>Location</h4>
+                        <p>Lahore, Punjab, Pakistan</p>
+                    </div>
+                </div>
+
+                <div class="social-links large" data-aos="fade-up" data-aos-delay="300">
+                    <a href="https://github.com/mahpara-siddique" target="_blank" aria-label="GitHub"><ion-icon name="logo-github"></ion-icon></a>
+                    <a href="https://www.linkedin.com/in/mahpara-siddique-77068b1bb" target="_blank" aria-label="LinkedIn"><ion-icon name="logo-linkedin"></ion-icon></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-right">
+           <p>Designed by <span class="gradient-text font-bold">Mahpara Siddique</span></p>
+        </div>
+    </footer>
+
+    <!-- Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
